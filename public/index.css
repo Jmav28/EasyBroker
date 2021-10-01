@@ -1,3 +1,5 @@
+/* ---------------NAVBAR SEC--------------- */
+
 .navbar {
     background-color: var(--blue-bg);
     width: 100%;
@@ -46,8 +48,8 @@
     position: absolute;
     left: 0;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
-    transition: opacity 0.2s ease-out, transform 0.2s ease-in-out;
-    transform: translateX(-40px);
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    transform: translateX(-100%);
     opacity: 0;
     z-index: 1;
     background: var(--white-bg);
@@ -60,13 +62,17 @@
     z-index: 100;
 }
 
-.nav-link-cont {
+.navbar-link-cont {
     width: 100%;
     border-bottom: 1px solid var(--grey-bg);
     border-top: 1px solid var(--grey-bg);
 }
 
-.nav-link-cont a {
+.navbar-link-cont.inicio {
+    display: block;
+}
+
+.navbar-link-cont a {
     display: block;
     font-size: 1rem;
     font-weight: 900;
@@ -74,7 +80,7 @@
     padding: 1rem;
 }
 
-.nav-link-cont i {
+.navbar-link-cont i {
     margin-right: 0.3rem;
 }
 
@@ -87,4 +93,86 @@
     background-color: var(--grey-bg-nav);
     border-top: 1px solid var(--grey-bord-nav);
     border-bottom: 1px solid var(--grey-bord-nav);
+}
+
+/* ---------------NAVBAR SEC--------------- */
+
+@media screen and (min-width:900px) {
+ /* ---------------NAVBAR SEC--------------- */
+    
+    .navbar-logo {
+        margin-right: 1rem;
+    }   
+
+    #navbar-toggle {
+        display: none;
+    }
+    
+    .navbar-cont {
+        flex-direction: row;
+    }
+
+    .navbar-cont i {
+        display: none;
+    }
+
+    #navbar-links {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;  
+        align-items: center;
+        position: relative;
+        box-shadow: none;
+        opacity: 1;
+        transform: translateY(0);
+        top: 0;
+        background: transparent;
+    }
+
+    .navbar-links-cont {
+        width: 100%;
+    }
+
+    .navbar-link-cont {
+        border: none;
+        width: auto;
+    }
+
+    .navbar-link-cont a {
+        color: var(--white-txt);
+    }
+
+    .navbar-separador, 
+    .help-sec-cont,
+    .who-sec-cont,
+    .social-sec-cont,
+    .navbar-link-cont.inicio {
+        display: none;
+    }
+    
+    .sign-up-sec {
+        display: flex;
+        flex-direction: row-reverse;
+        margin-left: auto;
+    }
+    .main-sec-cont {
+        display: flex;
+    }
+
+    .main-sec .navbar-link-cont a {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: auto;
+    }
+    
+  /* ---------------COUNTRY MENU SEC--------------- */
+   
+    .navbar-links > .sign-up-sec > .country {
+        display: block;
+        position: relative;
+    }
+
+    .country .country-list-cont {
+        position: absolute;
+    }
 }
