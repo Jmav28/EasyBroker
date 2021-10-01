@@ -42,5 +42,49 @@
 }
 
 #navbar-links {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+    transition: opacity 0.2s ease-out, transform 0.2s ease-in-out;
+    transform: translateX(-40px);
+    opacity: 0;
+    z-index: 1;
+    background: var(--white-bg);
+    top: 60px;
+}
+
+#navbar-links.activo {
+    opacity: 1;
+    transform: translateX(0);
+    z-index: 100;
+}
+
+.nav-link-cont {
+    width: 100%;
+    border-bottom: 1px solid var(--grey-bg);
+    border-top: 1px solid var(--grey-bg);
+}
+
+.nav-link-cont a {
+    display: block;
+    font-size: 1rem;
+    font-weight: 900;
+    color: var(--black-txt);
+    padding: 1rem;
+}
+
+.nav-link-cont i {
+    margin-right: 0.3rem;
+}
+
+.navbar-links > .sign-up-sec > .country {
     display: none;
+}
+
+.navbar-separador {
+    height: 1rem;
+    background-color: var(--grey-bg-nav);
+    border-top: 1px solid var(--grey-bord-nav);
+    border-bottom: 1px solid var(--grey-bord-nav);
 }
