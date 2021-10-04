@@ -95,7 +95,63 @@
     border-bottom: 1px solid var(--grey-bord-nav);
 }
 
-/* ---------------NAVBAR SEC--------------- */
+/* ---------------HEADY SEC--------------- */
+
+.heady-sec {
+    background: var(--blue-bg) url(https://cdn.easybroker.com/assets/product/homepage/hero-bg-f9fd0149bf423f65228d95074134c0818deea6c391f2f8434d6661933ae32156.svg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    color: var(--white-txt);
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.heady-sec-cont {
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 6rem;
+    align-items: center;
+    width: 100%;
+}
+
+.heady-sec-txt {
+    padding-top: 4rem;
+    margin-bottom: 0.66rem;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.heady-sec-txt h1 {
+    font-weight: bolder;
+}
+
+.heady-sec-txt p {
+    padding-bottom: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    letter-spacing: 0.9px;
+}
+
+.heady-sec-btn-cont {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.heady-sec-btn {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+}
+
+.orange-btn {
+    background: linear-gradient(135deg, #fdbe45, #ff9149);
+    color: var(--white-txt); 
+    font-weight: bold;
+    border: 0;
+}
 
 @media screen and (min-width:900px) {
  /* ---------------NAVBAR SEC--------------- */
