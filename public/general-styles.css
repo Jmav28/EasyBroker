@@ -17,7 +17,7 @@
     --green-color:#45e5b0;
 }
 
-body {
+html, body {
     font-size: 17px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
