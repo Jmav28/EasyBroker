@@ -109,6 +109,7 @@
 
 .heady-sec-cont {
     display: flex;
+    flex-direction: row;
     padding-top: 1rem;
     padding-bottom: 6rem;
     align-items: center;
@@ -137,10 +138,10 @@
 .heady-sec-btn-cont {
     padding-left: 15px;
     padding-right: 15px;
+    text-align: center;
 }
 
 .heady-sec-btn {
-    display: block;
     font-size: 1.5rem;
     padding: 1rem 2rem;
     border-radius: 2rem;
@@ -151,6 +152,59 @@
     color: var(--white-txt); 
     font-weight: bold;
     border: 0;
+    text-align: center;
+    max-width: 272px;
+}
+
+.heady-sec-btn-cont2 {
+    display: none;
+}
+
+.heady-sec-video-cont {
+    display: none;
+}
+
+@media screen and (min-width:700px) {
+    
+    .heady-sec-cont {
+        flex-direction: column;
+    }
+
+    .heady-sec-video-cont {
+        display: block;
+        position: relative;
+    }
+
+    .heady-video-btn {
+        position: absolute;
+        top: 45%;
+        left: 41%;
+        background-color: var(--blue-bg);
+        border-color: var(--blue-bg);
+        color: var(--white-txt);
+        font-size: 1.1rem;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 2rem;
+    }
+
+    .heady-sec-video-cont img {
+        max-width: 100%;
+    }
+
+    .heady-sec-btn-cont2 .heady-sec-btn {
+        display: block;
+        margin: 0 auto;
+        line-height: normal;
+    }
+    .heady-sec-btn-cont2 {
+        display: block;
+        margin-top: 3rem;
+    }
+    
+    .heady-sec-btn-cont {
+        display: none;
+    }
 }
 
 @media screen and (min-width:900px) {
@@ -235,11 +289,14 @@
   /* ---------------COUNTRY MENU SEC--------------- */
    
     .navbar-links > .sign-up-sec > .country {
-        display: block;
+        display: none;
         position: relative;
     }
 
     .country .country-list-cont {
         position: absolute;
     }
+
+ /* ---------------HEADY SEC--------------- */
+
 }
