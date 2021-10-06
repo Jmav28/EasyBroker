@@ -298,5 +298,44 @@
     }
 
  /* ---------------HEADY SEC--------------- */
+ 
+    .heady-sec-flex-item {
+        max-width: 50%;
+    }
+ 
+    .heady-sec-cont {
+        flex-direction: row;
+        align-items: unset;
+    }
 
+    .heady-sec-btn-cont2 {
+        display: none;
+    }
+    
+    .heady-sec-btn-cont {
+        display: initial;
+    }
+
+    .heady-sec-btn-cont {
+        padding-left: 2rem;
+    }
+
+    .heady-sec-txt {
+        padding: 0.33rem 2rem 0;
+        text-align: left;
+    }
+
+    .heady-sec-txt h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
+
+    .heady-sec-video-cont {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .heady-video-btn {
+        left: 36%;
+    }
 }
