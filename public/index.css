@@ -306,18 +306,21 @@
     .heady-sec-cont {
         flex-direction: row;
         align-items: unset;
+        max-width: 1200px;
+        margin: 0 auto;
     }
 
     .heady-sec-btn-cont2 {
         display: none;
     }
-    
-    .heady-sec-btn-cont {
-        display: initial;
-    }
 
     .heady-sec-btn-cont {
         padding-left: 2rem;
+        display: block;
+    }
+
+    .heady-sec-btn {
+        display: block;
     }
 
     .heady-sec-txt {
@@ -337,5 +340,16 @@
 
     .heady-video-btn {
         left: 36%;
+    }
+}
+
+@media screen and (min-width:1240px) {
+    .heady-sec-cont {
+        align-items: center;
+    }
+
+    .heady-sec-txt h1 {
+        font-size: 3rem;
+        font-weight: bolder;
     }
 }
