@@ -164,6 +164,53 @@
     display: none;
 }
 
+/* ---------------INMOV SEC--------------- */
+
+.inmov-sec {
+    background-color: var(--white-bg);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.inmov-sec-cont {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.inmov-sec-cont h4 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: #595e6c;
+}
+
+.inmov-cards-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.inmov-card {
+    padding: 1rem 0.66rem;
+    max-width: 50%;
+    flex: 0 0 50%;
+}
+
+.inmov-card img {
+    width: 100%;
+}
+
+@media screen and (min-width:480px) {
+    .inmov-card {
+        max-width: 33.333%;
+        flex: 0 0 33.333%;
+    }
+}
+
 @media screen and (min-width:700px) {
     
     .heady-sec-cont {
@@ -204,6 +251,11 @@
     
     .heady-sec-btn-cont {
         display: none;
+    }
+
+    .inmov-card {
+        max-width: 100%;
+        flex: 1 0 0;
     }
 }
 
@@ -340,6 +392,10 @@
 
     .heady-video-btn {
         left: 36%;
+    }
+
+    .inmov-sec {
+        padding: 3rem;
     }
 }
 
